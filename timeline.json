@@ -1,0 +1,58 @@
+{
+    "May 2019" : [
+        "WR enabled (Win10 + nVidia desktop GPUs)"
+    ],
+    "July 2019" : [
+        "WR enabled (Win10 + AMD GPUs)"
+    ],
+    "October 2019" : [
+        "WR enabled (some Intel GPUs)"
+    ],
+    "February 2020" : [
+        "WR enabled (Win10 + nVidia laptops)"
+    ],
+    "April 2020" : [
+        "DirectComposition"
+    ],
+    "May 2020" : [
+        "WR enabled (modern Intel laptops)"
+    ],
+    "June 2020" : [
+        "WR enabled (high resolution nVidia)",
+        "WR enabled (Windows + all Intel GPUs)"
+    ],
+    "July 2020" : [
+        "WR enabled (Windows + all Intel/AMD GPUs)"
+    ],
+    "November 2020" : [
+        "WR enabled (Mac + Win7/8)"
+    ],
+    "December 2020" : [
+        "WR enabled (old Intel + Linux)"
+    ],
+    "June 2021" : [
+        "WR enabled (all Linux)"
+    ],
+    "July 2021" : [
+        "Software Webrender for non-accelerated users"
+    ],
+    "September 2021" : [
+        "WR enabled (all remaining users)"
+    ],
+    "November 2021" : [
+        "MacOS video low-power mode"
+    ],
+    "June 2022" : [
+        "GPU Process Support (Android)"
+    ],
+    "February 2023" : [
+        "Accelerated Canvas2D (Linux and macOS)"
+    ],
+    "February 2024" : [
+        "Off-main-thread Canvas2D"
+    ],
+    "March 2024" : [
+        "NVIDIA Super Resolution",
+        "NVIDIA TrueHDR"
+    ]
+}
