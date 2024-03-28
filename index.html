@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@panzoom/panzoom"></script>
+    <style>
+        .panzoom-parent { border: 2px solid #333; }
+        .panzoom-parent img { width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+
+<div class="panzoom-parent">
+    <img id="panzoom-element" src="timeline.png" alt="Timeline"/>
+</div>
+
+<button id="zoom-in">Zoom In</button>
+<button id="zoom-out">Zoom Out</button>
+<button id="reset">Reset</button>
+
+<script>
+    $(function() {
+        const panzoom = Panzoom(document.getElementById('panzoom-element'), {
+            // Options
+            maxScale: 5
+        });
+        const parent = panzoom.getPan().parentElement;
+        // Enable panning
+        parent.addEventListener('wheel', panzoom.zoomWithWheel);
+
+        // Control buttons
+        document.getElementById('zoom-in').addEventListener('click', function() { panzoom.zoomIn(); });
+        document.getElementById('zoom-out').addEventListener('click', function() { panzoom.zoomOut(); });
+        document.getElementById('reset').addEventListener('click', function() { panzoom.reset(); });
+    });
+</script>
+
+</body>
+</html>
+
